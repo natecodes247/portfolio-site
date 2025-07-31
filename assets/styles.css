@@ -1,105 +1,110 @@
-/* Base styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #111;
   color: #f0f0f0;
-  text-align: center;
-  animation: fadeIn 1.2s ease-in;
+  scroll-behavior: smooth;
 }
 
 header {
-  background-color: #222;
-  padding: 15px 30px;
-  border-bottom: 2px solid #444;
+  background-color: #1a1a1a;
+  padding: 20px 40px;
+  border-bottom: 1px solid #333;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  justify-content: center;
-  gap: 20px;
+  gap: 30px;
   margin: 0;
   padding: 0;
+  justify-content: center;
 }
 
 nav a {
-  color: #fff;
+  color: #f0f0f0;
   text-decoration: none;
   font-weight: bold;
+  transition: color 0.3s;
 }
 
 nav a:hover {
-  color: #0ff;
+  color: #00ffff;
 }
 
-/* Hero section */
 .hero {
-  margin-top: 40px;
-  animation: slideIn 1s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px;
+  background-color: #121212;
+  border-bottom: 1px solid #222;
+}
+
+.left {
+  flex: 1;
+  text-align: center;
+}
+
+.right {
+  flex: 2;
+  padding-left: 40px;
 }
 
 .profile-pic {
-  width: 140px;
-  height: 140px;
-  object-fit: cover;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   border: 3px solid #0ff;
-  margin-bottom: 20px;
-}
-
-/* Main content */
-main {
-  padding: 30px;
+  object-fit: cover;
 }
 
 h1 {
-  font-size: 2.4em;
+  font-size: 2.5rem;
   margin-bottom: 10px;
 }
 
-p, li {
-  font-size: 1.1em;
-  line-height: 1.6;
+p {
+  font-size: 1.1rem;
 }
 
-/* Project Card */
+section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.bio, .projects {
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  margin-top: 20px;
+  padding: 40px;
+}
+
+.projects h2, .bio h2 {
+  color: #00ffff;
+  margin-bottom: 20px;
+}
+
 .project-card {
   background-color: #222;
-  border: 1px solid #333;
-  border-radius: 8px;
   padding: 20px;
-  margin: 30px auto;
-  max-width: 600px;
-  box-shadow: 0 0 10px #0ff2;
-  animation: zoomIn 0.6s ease-in;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid #333;
 }
 
-.project-card h2 {
+.project-card h3 {
+  margin: 0;
   color: #0ff;
 }
 
-a {
+.project-card a {
   color: #0ff;
+  text-decoration: none;
 }
 
-a:hover {
+.project-card a:hover {
   text-decoration: underline;
-}
-
-/* Animations */
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-@keyframes slideIn {
-  from { transform: translateY(-20px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
-}
-
-@keyframes zoomIn {
-  from { transform: scale(0.9); opacity: 0; }
-  to { transform: scale(1); opacity: 1; }
 }

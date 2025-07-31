@@ -10,19 +10,40 @@
   <header>
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#bio">About</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="resume.html">Resume</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="hero">
-    <img src="assets/picme.png" alt="Nathaniel's Photo" class="profile-pic" />
-    <h1>Nathaniel Oluwasegun Afolayan</h1>
-    <p>Software Engineer | Backend Developer</p>
+  <section id="hero" class="hero">
+    <div class="left">
+      <img src="assets/picme.png" alt="Nathaniel" class="profile-pic" />
+    </div>
+    <div class="right">
+      <h1>Nathaniel Oluwasegun Afolayan</h1>
+      <p>Software Engineer | Backend Developer</p>
+    </div>
+  </section>
+
+  <section id="bio" class="bio">
+    <h2>About Me</h2>
+    <p>
+      I'm a passionate Software Engineer focused on backend development with Node.js. I love building scalable APIs, solving real-world problems, and continuously improving my craft.
+    </p>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>Taskflow API</h3>
+      <p>A task management backend API built with Node.js and MongoDB.</p>
+      <a href="https://github.com/natecodes247/taskflow-api" target="_blank">View on GitHub</a>
+    </div>
+    <!-- You can add more project-card blocks below -->
   </section>
 </body>
 </html>
