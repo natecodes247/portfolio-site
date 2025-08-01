@@ -4,29 +4,45 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Resume | Nathaniel Afolayan</title>
-  <link rel="stylesheet" href="assets/styles.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="resume.html">Resume</a></li>
-        <li><a href="contact.html">Contact</a></li>
+<body class="bg-gray-950 text-white font-sans">
+
+  <header class="bg-gray-900 shadow sticky top-0 z-50">
+    <nav class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="text-xl font-bold text-blue-400">Nathaniel</div>
+      <ul class="flex space-x-6 text-sm font-medium">
+        <li><a href="index.html" class="hover:text-blue-500">Home</a></li>
+        <li><a href="contact.html" class="hover:text-blue-500">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="resume">
-    <h2>Resume</h2>
-    <p><strong>Name:</strong> Nathaniel Oluwasegun Afolayan</p>
-    <p><strong>Role:</strong> Software Engineer (Backend)</p>
-    <p><strong>Languages:</strong> JavaScript, Node.js</p>
-    <p><strong>Frameworks:</strong> Express, MongoDB, PostgreSQL</p>
-    <p><strong>Tools:</strong> Git, Docker, Postman, VS Code</p>
-    <p><strong>Download:</strong> <a href="assets/Nathaniel_Resume.pdf" download>Download PDF</a></p>
+  <section class="max-w-4xl mx-auto py-20 px-6">
+    <h1 class="text-3xl font-bold mb-6 text-center">My Resume</h1>
+    <p class="text-gray-400 mb-6 text-center">Download the full resume or view highlights below.</p>
+
+    <div class="bg-gray-800 p-6 rounded-lg">
+      <h2 class="text-xl font-semibold mb-2">Experience</h2>
+      <p class="text-gray-400">Backend Developer at ConocoPhillips (2023–present)</p>
+      <p class="text-gray-400">Built secure, scalable APIs using Node.js and MongoDB.</p>
+
+      <h2 class="text-xl font-semibold mt-6 mb-2">Skills</h2>
+      <ul class="list-disc text-gray-400 list-inside">
+        <li>Node.js, Express</li>
+        <li>MongoDB, Mongoose</li>
+        <li>REST API Design</li>
+        <li>Git, GitHub, CI/CD</li>
+      </ul>
+
+      <h2 class="text-xl font-semibold mt-6 mb-2">Education</h2>
+      <p class="text-gray-400">BSc in Computer Science or equivalent</p>
+    </div>
   </section>
+
+  <footer class="bg-gray-900 py-6 text-center text-sm text-gray-500">
+    &copy; 2025 Nathaniel Afolayan. All rights reserved.
+  </footer>
+
 </body>
 </html>
